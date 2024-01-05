@@ -1,17 +1,17 @@
+//Time Complexity O(2^n)
+//Space Complexity O(n)
+
 /**
 const fib = (n) => {
     if(n <= 2) return 1
     return fib(n-1) + fib(n-2)
 }
-
-//Time complexity O(2^n)
-
 */
 
 //Memoization of Fibonacci
 
-//Time complexity O(n)
-//Space complexity O(n)
+//Time Complexity O(n)
+//Space Complexity O(n)
 
 const fib = (n, memo = {}) => {
     if(n in memo) return memo[n]
@@ -20,4 +20,4 @@ const fib = (n, memo = {}) => {
     return memo[n]
 }
 
-console.log(fib(56))
+console.log(fib(56))    
